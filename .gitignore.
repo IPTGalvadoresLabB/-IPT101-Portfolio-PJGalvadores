@@ -1,5 +1,0 @@
-# Ignore heavy node dependencies 
-        node_modules/ 
-# Ignore sensitive environment variables 
-       .env 
-       .env.local
