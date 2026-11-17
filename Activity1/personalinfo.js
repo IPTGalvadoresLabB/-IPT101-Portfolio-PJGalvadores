@@ -4,54 +4,54 @@ const personalInfo = {
   Program: "Bachelor of Science in Information Technology",
   yearLevel: "2",
 
-  enrolledCourses: {
-    course1: { courseTitle: "IPT", units: 3, finalGrade: 80 },
-    course2: { courseTitle: "App Dev", units: 3, finalGrade: 88 },
-    course3: { courseTitle: "Pathfit 4", units: 2, finalGrade: 87 },
-    course4: { courseTitle: "Networking 1", units: 3, finalGrade: 89 },
-    course5: {
-      courseTitle: "Event Driven Programming",
+  enrolledSubjects: {
+    subject1: { subjectTitle: "IPT", units: 3, finalGrade: 80 },
+    subject2: { subjectTitle: "App Dev", units: 3, finalGrade: 88 },
+    subject3: { subjectTitle: "Pathfit 4", units: 2, finalGrade: 87 },
+    subject4: { subjectTitle: "Networking 1", units: 3, finalGrade: 89 },
+    subject5: {
+      subjectTitle: "Event Driven Programming",
       units: 3,
       finalGrade: 92,
     },
-    course6: { courseTitle: "Arts Appreciation", units: 3, finalGrade: 80 },
-    course7: { courseTitle: "STS", units: 3, finalGrade: 85 },
-    course8: { courseTitle: "Work Education", units: 0, finalGrade: 93 },
-    course9: { courseTitle: "Colloqium", units: 0, finalGrade: 90 },
+    subject6: { subjectTitle: "Arts Appreciation", units: 3, finalGrade: 80 },
+    subject7: { subjectTitle: "STS", units: 3, finalGrade: 85 },
+    subject8: { subjectTitle: "Work Education", units: 0, finalGrade: 93 },
+    subject9: { subjectTitle: "Colloquium", units: 0, finalGrade: 90 },
   },
 };
 
-const c1 = personalInfo.enrolledCourses.course1;
-const c2 = personalInfo.enrolledCourses.course2;
-const c3 = personalInfo.enrolledCourses.course3;
-const c4 = personalInfo.enrolledCourses.course4;
-const c5 = personalInfo.enrolledCourses.course5;
-const c6 = personalInfo.enrolledCourses.course6;
-const c7 = personalInfo.enrolledCourses.course7;
-const c8 = personalInfo.enrolledCourses.course8;
-const c9 = personalInfo.enrolledCourses.course9;
+const s1 = personalInfo.enrolledSubjects.subject1;
+const s2 = personalInfo.enrolledSubjects.subject2;
+const s3 = personalInfo.enrolledSubjects.subject3;
+const s4 = personalInfo.enrolledSubjects.subject4;
+const s5 = personalInfo.enrolledSubjects.subject5;
+const s6 = personalInfo.enrolledSubjects.subject6;
+const s7 = personalInfo.enrolledSubjects.subject7;
+const s8 = personalInfo.enrolledSubjects.subject8;
+const s9 = personalInfo.enrolledSubjects.subject9;
 
 const totalUnits =
-  c1.units +
-  c2.units +
-  c3.units +
-  c4.units +
-  c5.units +
-  c6.units +
-  c7.units +
-  c8.units +
-  c9.units;
+  s1.units +
+  s2.units +
+  s3.units +
+  s4.units +
+  s5.units +
+  s6.units +
+  s7.units +
+  s8.units +
+  s9.units;
 
 const totalWeightedGrade =
-  c1.finalGrade * c1.units +
-  c2.finalGrade * c2.units +
-  c3.finalGrade * c3.units +
-  c4.finalGrade * c4.units +
-  c5.finalGrade * c5.units +
-  c6.finalGrade * c6.units +
-  c7.finalGrade * c7.units +
-  c8.finalGrade * c8.units +
-  c9.finalGrade * c9.units;
+  s1.finalGrade * s1.units +
+  s2.finalGrade * s2.units +
+  s3.finalGrade * s3.units +
+  s4.finalGrade * s4.units +
+  s5.finalGrade * s5.units +
+  s6.finalGrade * s6.units +
+  s7.finalGrade * s7.units +
+  s8.finalGrade * s8.units +
+  s9.finalGrade * s9.units;
 
 const computedGWA = (totalWeightedGrade / totalUnits).toFixed(2);
 
